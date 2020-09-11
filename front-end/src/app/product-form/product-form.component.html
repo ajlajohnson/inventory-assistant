@@ -1,0 +1,9 @@
+<form #productForm="ngForm" (ngSubmit)="addProduct(productForm)">
+  <label for="product">Product</label>
+  <input type="text" id="product" name="product" ngModel />
+  <label for="price">Price</label>
+  <input type="number" id="price" name="price" ngModel />
+  <label for="quantity">Quantity</label>
+  <input type="number" id="quantity" name="quantity" ngModel />
+  <button>Add</button>
+</form>

@@ -1,0 +1,6 @@
+<app-product-form (added)="addProduct($event)"></app-product-form>
+<app-product
+  *ngFor="let product of inventory"
+  [productRef]="product"
+  (deleted)="deleteProduct(product.id)"
+></app-product>
